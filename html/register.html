@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+<section>
+    <header>
+        <h1>Register for our online shop</h1>
+    </header>
+    <form id ="register">
+        <label for="createName" >Select a username:</label><br>
+        <input type="text" required id="createName" name="name" pattern="[^' ']+" title="username cannot contain spaces"><br>
+        <label for="createEmail">Email:</label><br>
+        <input type="email" required id="createEmail" name="email"><br>
+        <label for="createPassword">Select a password:</label><br>
+        <input type="password" required id="createPassword" name="password" pattern=".{5,}" title="password must contain at least 5 characters"><br>
+        <fieldset id = "newsletter">
+            <label for="newsBool">check here to sign up for our newsletter</label>
+            <input type="checkbox" id="newsBool">
+        </fieldset><br>
+        <input id="registerButton" type="submit" value="Register!"  />
+    </form>
+    <p id="output"></p>
+    <p id="localUser"></p>
+    <!--<input class="logOut" type="button" value="Log out" onclick="" />-->
+    <p>
+        <a href="index.html" id="backToHome">Back to home</a>
+    </p>
+    <script src="../js/full.js"></script>
+</section>
+
+</body>
+</html>
